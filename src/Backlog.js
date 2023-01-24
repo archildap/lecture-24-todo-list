@@ -1,11 +1,12 @@
 import{memo} from 'react';
+import styles from './styles/style.module.css';
 
 const Backlog = ({task, index, addToInProgress}) => {
-    console.log('todo -> render')
+    console.log('Backlog -> render')
     return (
-        <div>
+        <div className={styles.taskWrapper}>
             <p>{task}</p>
-            <button className="btn" onClick={() => addToInProgress('backlog', index)}>Add to In Progress</button>
+            <button className={styles.btn} onClick={() => addToInProgress('backlog', index)}>Add to In Progress</button>
         </div>
     );
 }    

@@ -4,6 +4,7 @@ import AddTask from './AddTask';
 import Backlog from './Backlog';
 import Done from './Done';
 import InProgress from './InProgress';
+import styles from './styles/style.module.css';
 
 
 function App () {
@@ -81,11 +82,11 @@ function App () {
 
   
     return (
-      <div className="App">  
+      <div className={styles.app}>  
         <AddTask task = {section.temp.task} onChange = {onChange} addTask = {addTask} />
-        <div className="container">
-          <div className='Backlog'>
-            <h1>Backlog</h1>
+        <div className={styles.sectionsWrapper}>
+          <div className={styles.boxWrapper}>
+            <h1 className={`${styles.sectionHeader} ${styles.backlog}`}>Backlog | {section.backlog.length}</h1>
             {section.backlog.map((backlog, index) => {
               return <Backlog
                 key={index}
@@ -94,8 +95,8 @@ function App () {
                 index={index} />
             })}
           </div>
-          <div>
-            <h1>In Progress</h1>
+          <div className={styles.boxWrapper}>
+            <h1 className={`${styles.sectionHeader} ${styles.inProgress}`}>In Progress | {section.inProgress.length}</h1>
             {section.inProgress.map((inProgress, index) => {
               return <InProgress
                 key={index}
@@ -105,8 +106,8 @@ function App () {
                 index={index} />
             })}
           </div>
-          <div className='Done'>
-            <h1>Done</h1>
+          <div className={styles.boxWrapper}>
+            <h1 className={`${styles.sectionHeader} ${styles.done}`}>Done | {section.done.length}</h1>
             {section.done.map((done, index) => {
               return <Done
                 key={index}

@@ -1,12 +1,13 @@
 import{memo} from 'react';
+import styles from './styles/style.module.css';
 
 
 const AddTask = ({onChange, task, addTask}) => {
-    {console.log('task -> render')}
+    {console.log('Addtask -> render')}
     return (
-        <div className="task-container">
-            <input className='task-input' value={task} type='text' placeholder='Enter a task' onChange={(event) => onChange(event)} />
-            <button onClick={addTask} className='btn'>Add Task</button>
+        <div className={styles.inputWrapper}>
+            <input className={styles.taskInput} value={task} type='text' placeholder='Enter a task' onChange={(event) => onChange(event)} />
+            <button onClick={addTask} className={styles.btn}>Add Task</button>
         </div>
     );
 }        
