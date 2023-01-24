@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/lecture-24-todo-list/static/css/main.c77a7c44.css",
+    "main.js": "/lecture-24-todo-list/static/js/main.57a4227b.js",
+    "static/js/787.5b73beac.chunk.js": "/lecture-24-todo-list/static/js/787.5b73beac.chunk.js",
+    "index.html": "/lecture-24-todo-list/index.html",
+    "main.c77a7c44.css.map": "/lecture-24-todo-list/static/css/main.c77a7c44.css.map",
+    "main.57a4227b.js.map": "/lecture-24-todo-list/static/js/main.57a4227b.js.map",
+    "787.5b73beac.chunk.js.map": "/lecture-24-todo-list/static/js/787.5b73beac.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c77a7c44.css",
+    "static/js/main.57a4227b.js"
+  ]
+}
